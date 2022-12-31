@@ -41,7 +41,7 @@ export const RatingSelector: FC<Props> = ({
           {ratings.map((rating) => (
             <m.label
               htmlFor={`rating-${rating}`}
-              className={`w-12 h-12 cursor-pointer rounded-full flex items-center justify-center ${
+              className={`w-12 h-12 md:w-14 md:h-14 cursor-pointer rounded-full flex items-center justify-center ${
                 rating === selectedRating
                   ? "bg-orange hover:bg-orange"
                   : "bg-[#262D37] hover:bg-light-grey"
